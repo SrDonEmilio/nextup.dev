@@ -24,11 +24,32 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+      <!-- Search Engine -->
+    <meta name="description" content="Software Development">
+    <meta name="image" content="%PUBLIC_URL%/preview.jpg">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="NextUp.dev">
+    <meta itemprop="description" content="Software Development">
+    <meta itemprop="image" content="%PUBLIC_URL%/preview.jpg">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="NextUp.dev">
+    <meta name="twitter:description" content="Software Development">
+    <meta name="twitter:image:src" content="%PUBLIC_URL%/preview.jpg">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="NextUp.dev">
+    <meta name="og:description" content="Software Development">
+    <meta name="og:image" content="%PUBLIC_URL%/preview.jpg">
+    <meta name="og:url" content="https://nextup.dev">
+    <meta name="og:site_name" content="NextUp.dev">
+    <meta name="og:locale" content="es_MX">
+    <meta name="og:type" content="website">
+    <title>NextUp.dev</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="header"></div>
+    <div id="wrapper"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -39,5 +60,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="./js/three.r95.min.js"></script>
   </body>
 </html>
