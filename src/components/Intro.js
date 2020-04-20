@@ -20,10 +20,11 @@ function typeWriter() {
   }
 }
 
-function welcome(){
+export function welcome(){
   typeWriter()
   document.getElementById("menu-header").style.opacity = "1"
 }
+
 
 const Intro = (props) => {
   const [vantaEffect, setVantaEffect] = useState(0)
