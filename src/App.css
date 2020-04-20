@@ -37,27 +37,6 @@
   }
 }
 
-
-#header {height: 100%;width: 100%;position: absolute;}
-
-#header div {
-  width: 100%;
-  height: 100%;
-}
-
-body {
-  margin: 0;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif;
-  color: #fff;
-  vertical-align: middle;
-}
-a {
-  font-family: 'Roboto', sans-serif;
-  color: #fff;
-  text-decoration: none;
-}
 .button {
   background: #000;
   width: 100px;
@@ -69,11 +48,27 @@ a {
 .button#contact {
   background: #000000b8;
 }
-#header-content {
-  position: fixed;
-  text-align: center;
+.app-container {
+  display: inline-block;
+  position: relative; 
+}
+#site {
+  position: relative;
   width: 100%;
-  margin: auto;
-  height: 100%;
-  padding-top: 20%;
+  height: 100vh; 
+}
+#site-gradient {
+  height: 100px;
+  margin-top: -100px;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+#site-container {
+  width: 85%;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+#welcome {
+  font-family: 'JetBrainsMono';
 }
