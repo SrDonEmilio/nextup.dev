@@ -13,3 +13,7 @@
     margin: auto;
     padding-top: 30vh;
 }
+#intro-logo {
+    width: 600px;
+    max-width: 100%;
+}

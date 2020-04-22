@@ -7,6 +7,7 @@
     transition: visibility 0s, opacity 0.5s linear;
     transition-delay: 0.5s;
     opacity: 0;
+    display: none;
 }
 
 #menu-header .menu-item {

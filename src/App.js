@@ -1,21 +1,21 @@
 import React from 'react';
 import './App.css';
-import Intro, {welcome} from './components/Intro'
-import MenuHeader from './components/MenuHeader'
+import Intro from './components/Intro'
+import About, {welcome} from './components/About'
+import Portfolio from './components/Portfolio'
+
 
 
 class App extends React.Component {
   componentDidMount() {
     console.log('here')
-    const myElement = document.querySelector("#site").getBoundingClientRect()
-    console.log(myElement.top)
+    //const myElement = document.querySelector("#site").getBoundingClientRect()
     let last_scroll_position = 0
     let welcomeActive = false
     window.addEventListener('scroll', function(e) {
       last_scroll_position = window.scrollY;
       if(last_scroll_position >=100 && !welcomeActive){
         welcome()
-        console.log(last_scroll_position)
         welcomeActive = true
       }
     })
@@ -23,19 +23,12 @@ class App extends React.Component {
   render() {
     return (
       <div id="app">
-      <div className="app-container" id="intro">
-        <Intro />
-      </div>
-
-      <div className="app-container" id="site">
-        <div id="site-gradient">
-          <MenuHeader />
+        <div className="app-container" id="intro">
+          <Intro />  
         </div>
-        <div id="site-container">
-          <p id="welcome">Bienvenido. <br /></p>
-        </div>
+          <About />
+          <Portfolio />
       </div>
-    </div>
     )
   }
 }
