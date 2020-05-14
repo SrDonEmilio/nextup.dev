@@ -1,0 +1,25 @@
+#profile-img {
+    max-width: 100%
+}
+#profile-img-mobile {
+  display: none;
+  max-width:90%
+}
+img.img-icon {
+  width: 40px;
+  filter: invert(1);
+  margin: 10px;
+}
+
+#profile-contact {
+  width: 240px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 769px) {
+  #profile-img {
+    display: none;
+  }
+  #profile-img-mobile {
+    display: inherit;
+  }
+}

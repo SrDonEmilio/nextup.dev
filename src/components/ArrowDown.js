@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-scroll"
-import arrowdown from '../img/down-arrow.svg'
+import arrowdown from '../img/icons/down-arrow.svg'
 import "../css/animations.css"
 
 const ArrowDown = ({extraClass, type, to, myFunction}) => {

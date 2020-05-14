@@ -1,15 +1,12 @@
 import React from 'react';
+import Header from './containers/Header'
+import Portfolio from './containers/Portfolio'
+import About, {welcome} from './containers/About'
+
 import './App.css';
-import Intro from './components/Intro'
-import About, {welcome} from './components/About'
-import Portfolio from './components/Portfolio'
-
-
 
 class App extends React.Component {
   componentDidMount() {
-    console.log('here')
-    //const myElement = document.querySelector("#site").getBoundingClientRect()
     let last_scroll_position = 0
     let welcomeActive = false
     window.addEventListener('scroll', function(e) {
@@ -24,7 +21,7 @@ class App extends React.Component {
     return (
       <div id="app">
         <div className="app-container" id="intro">
-          <Intro />  
+          <Header />  
         </div>
           <About />
           <Portfolio />

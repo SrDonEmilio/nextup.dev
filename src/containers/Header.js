@@ -1,11 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
 import NET from 'vanta/dist/vanta.net.min'
-import ArrowDown from './ArrowDown'
-import {welcome} from './About'
+import ArrowDown from '../components/ArrowDown'
+import {welcome} from '../containers/About'
 import logo from '../img/logo.png'
 import "../css/Intro.css"
 
-const Intro = (props) => {
+const Header = (props) => {
   const [vantaEffect, setVantaEffect] = useState(0)
   const myRef = useRef(null)
   useEffect(() => {
@@ -33,4 +33,4 @@ const Intro = (props) => {
   )
 }
 
-export default Intro
+export default Header
