@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './containers/Header'
 import Portfolio from './containers/Portfolio'
 import About, {welcome} from './containers/About'
+import MenuHeader from "./components/MenuHeader";
 
 import './App.css';
 
@@ -23,8 +24,15 @@ class App extends React.Component {
         <div className="app-container" id="intro">
           <Header />  
         </div>
-          <About />
+        <div id="site">
+    <div id="site-gradient">
+      <MenuHeader />
+    </div>
+    <div id="site-container">
+    <About />
           <Portfolio />
+    </div>
+  </div>
       </div>
     )
   }
