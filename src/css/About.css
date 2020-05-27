@@ -1,3 +1,9 @@
+#profile-header {
+  position: relative;
+  margin: 0 auto;
+  width: max-content;
+  max-width: 100%;
+}
 #profile-img {
     max-width: 100%
 }
