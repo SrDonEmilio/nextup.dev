@@ -19,5 +19,13 @@
 img.project-preview {
     width: 300px;
     height: 200px;
+    max-width: 100%;
     transition: 0.5s;
+}
+
+@media screen and (max-width: 425px){
+    .project {
+        margin: 0;
+        max-width: 100%;
+    }
 }
