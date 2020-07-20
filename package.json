@@ -9,8 +9,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
-    "react-scroll": "^1.7.16",
-    "vanta": "^0.5.14",
+    "react-scroll": "^1.8.0",
+    "vanta": "^0.5.16",
     "websocket-extensions": "^0.1.4",
     "yargs-parser": "^18.1.3"
   },
