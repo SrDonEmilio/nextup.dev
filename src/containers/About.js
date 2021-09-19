@@ -3,7 +3,6 @@ import React from "react";
 import "../css/About.css";
 
 import imgProfile from "../img/profile.png";
-import imgProfileMobile from "../img/profile-mobile.png";
 import iconGitHub from "../img/icons/icon-github.svg";
 import iconTwitter from "../img/icons/icon-twitter.svg";
 import iconMail from "../img/icons/icon-mail.svg";
@@ -32,52 +31,63 @@ export function welcome() {
 }
 
 const About = () => (
-<div id="about">
-<div id="info-site" style={{ display: "none" }}>
-  <h1>NextUp.dev</h1>
-  <h2>Software Development</h2>
-</div>
-<p id="welcome">
-  {" "}
-  <br />
-</p>
-<div id="profile">
-  <div id="profile-header">
-    <img src={imgProfile} alt="profile-img" id="profile-img" />
-    <img
-      src={imgProfileMobile}
-      alt="profile-img-mobile"
-      id="profile-img-mobile"
-    />
+  <div id="about">
+    <div id="info-site" style={{ display: "none" }}>
+      <h1>NextUp.dev</h1>
+      <h2>Software Development</h2>
+    </div>
+    <p id="welcome">
+      {" "}
+      <br />
+    </p>
+    <div id="profile">
+      <div id="profile-header">
+        <div>
+          <img src={imgProfile} alt="profile-img" id="profile-img" />
+        </div>
+        <div id="name-container">
+          <div
+            style={{ fontFamily: "Montserrat", color: "white", fontSize: 46 }}
+          >
+            Emilio Martínez Juárez
+          </div>
+          <div style={{ fontFamily: "Ubuntu", color: "#666766", fontSize: 38 }}>
+            Web Developer
+          </div>
+          <div style={{ fontFamily: "Ubuntu", color: "#999999", fontSize: 20 }}>
+            Technology enthusiast, interested in AI, Big Data, Quantum
+            Computing, Neuroscience and Computer Law
+          </div>
+        </div>
+      </div>
+      <div id="profile-contact">
+        <a href="mailto:emilio@nextup.dev">
+          <img className="img-icon" src={iconMail} alt="icon-mail"></img>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/emiliomtzjua/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img className="img-icon" src={iconLinkeIn} alt="icon-linkedin"></img>
+        </a>
+        <a
+          href="https://github.com/SrDonEmilio"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img className="img-icon" src={iconGitHub} alt="icon-github"></img>
+        </a>
+        <a
+          href="https://twitter.com/SrDonEmilio"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img className="img-icon" src={iconTwitter} alt="icon-twitter"></img>
+        </a>
+      </div>
+    </div>
   </div>
-  <div id="profile-contact">
-    <a href="mailto:emilio@nextup.dev">
-      <img className="img-icon" src={iconMail} alt="icon-mail"></img>
-    </a>
-    <a href="https://www.linkedin.com/in/emiliomtzjua/">
-      <img
-        className="img-icon"
-        src={iconLinkeIn}
-        alt="icon-linkedin"
-      ></img>
-    </a>
-    <a href="https://github.com/SrDonEmilio">
-      <img
-        className="img-icon"
-        src={iconGitHub}
-        alt="icon-github"
-      ></img>
-    </a>
-    <a href="https://twitter.com/SrDonEmilio">
-      <img
-        className="img-icon"
-        src={iconTwitter}
-        alt="icon-twitter"
-      ></img>
-    </a>
-  </div>
-</div>
-</div>
 );
 
 export default About;
