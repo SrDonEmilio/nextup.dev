@@ -1,19 +1,19 @@
 #intro {
-    height: 100vh;
-    width: 100%;
+	height: 100vh;
+	width: 100%;
 }
-#intro-container{
-    width: 100%;
-    height: 100%;
+#intro-container {
+	width: 100%;
+	height: 100%;
 }
 #intro-content {
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    margin: auto;
-    padding-top: 30vh;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	margin: auto;
+	padding-top: 30vh;
 }
 #intro-logo {
-    width: 600px;
-    max-width: 100%;
+	width: 600px;
+	max-width: 100%;
 }

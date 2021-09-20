@@ -1,17 +1,17 @@
 #menu-header {
-    width: 100%;
-    padding-top: 50px;
-    position: relative;
-    margin: 0 auto;
-    text-align: center;
-    transition: visibility 0s, opacity 0.5s linear;
-    transition-delay: 0.5s;
-    opacity: 0;
-    display: none;
+	width: 100%;
+	padding-top: 50px;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	transition: visibility 0s, opacity 0.5s linear;
+	transition-delay: 0.5s;
+	opacity: 0;
+	display: none;
 }
 
 #menu-header .menu-item {
-    color: #fff;
-    width: 100px;
-    display: inline-block;
+	color: #fff;
+	width: 100px;
+	display: inline-block;
 }
